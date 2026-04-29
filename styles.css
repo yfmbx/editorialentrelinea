@@ -576,7 +576,8 @@
     color: var(--charcoal-mid);
     line-height: 1.85;
     margin-top: 2rem;
-    width: 67em;
+    max-width: 100%;
+    width: 100%;
   }
   .product-price {
     font-family: var(--font-serif);
