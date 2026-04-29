@@ -348,7 +348,7 @@
   }
   /* Lado izquierdo del hero con texto */
   .hero-left {
-    padding: 8rem 3rem 6rem 20rem;
+    padding: 8rem 3rem 6rem 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
