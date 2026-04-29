@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Desktop/web"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "entrelinea",
+		"liveServer.settings.port": 5501
+	}
+}
