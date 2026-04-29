@@ -11,20 +11,14 @@
 
 </head>
 <body>
-<!-- Barra de navegación principal -->
-<!-- NAVIGATION -->
 <nav id="main-nav">
-  <!-- Logo de la marca -->
   <img src="img/logo.png" alt="Logo EntreLíneas" class="nav-logo">
-  <!-- Enlaces de navegación -->
   <ul class="nav-links">
     <li><a href="#nosotros">Conócenos</a></li>
     <li><a href="#concepto">Concepto</a></li>
     <li><a href="#valores">Nuestros valores</a></li>
   </ul>
-  <!-- Acciones de navegación -->
   <div class="nav-actions">
-    <!-- Barra de búsqueda -->
     <label class="nav-search" aria-label="Buscar en la página">
       <input type="search" placeholder="Buscar..." aria-label="Buscar" />
       <button type="button" class="search-button" aria-label="Iniciar búsqueda">
@@ -34,14 +28,12 @@
         </svg>
       </button>
     </label>
-    <!-- Botón crear cuenta -->
     <button class="nav-icon" aria-label="Crear cuenta">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
         <circle cx="12" cy="7" r="4"/>
       </svg>
     </button>
-    <!-- Botón carrito -->
     <button class="nav-icon" aria-label="Carrito">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="8" cy="21" r="1"/>
@@ -50,14 +42,11 @@
       </svg>
     </button>
   </div>
-  <!-- Botón hamburguesa para menú móvil -->
   <button class="hamburger" id="hamburger" aria-label="Abrir menú">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<!-- Menú móvil -->
-<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobile-menu">
   <button type="button" class="mobile-menu-close" id="mobile-menu-close">✕</button>
   <!-- Enlaces del menú móvil -->
@@ -69,29 +58,21 @@
   <a href="#" onclick="closeMobileMenu()">Carrito</a>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- HERO -->
-<!-- ═══════════════════════════════════════════════════════ -->
 <section id="hero">
-  <!-- Lado izquierdo del hero con texto -->
   <div class="hero-left">
     <p class="hero-eyebrow">Editorial Entrelínea — Volumen 1</p>
-    <!-- Título principal del hero -->
     <h1 class="hero-headline">
       Convierte el<br>tiempo muerto<br>en <em>tiempo tuyo</em>
     </h1>
-    <!-- Subtítulo del hero -->
     <p class="hero-sub">
       Un cuaderno de actividades pensado para los momentos entre momentos. Sin wifi, sin notificaciones. Solo tú, una página y la calma de volver a estar presente.
     </p>
-    <!-- Botones de acción -->
     <div class="hero-actions">
       <a href="#producto" class="btn-primary">
         Descubrir Volumen 1
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
-    <!-- Estadísticas del hero -->
     <div class="hero-stat">
       <div>
         <strong>4,2h</strong>
@@ -105,14 +86,11 @@
     </div>
   </div>
 
-  <!-- Lado derecho del hero con la portada real -->
   <div class="hero-right">
     <img class="hero-cover" id="hero-cover" src="img/portadaCuadernoTFG.jpg" alt="Portada del cuaderno" />
     </div>
 </section>
 
-<!-- Barra de ticker animada con frases clave -->
-<!-- TICKER -->
 <div class="ticker-wrap" aria-hidden="true">
   <div class="ticker">
     <span class="ticker-item">Menos scroll <span class="ticker-dot"></span></span>
@@ -123,7 +101,6 @@
     <span class="ticker-item">Desconexión intencional <span class="ticker-dot"></span></span>
     <span class="ticker-item">Diseño editorial <span class="ticker-dot"></span></span>
     <span class="ticker-item">Tiempo propio <span class="ticker-dot"></span></span>
-    <!-- duplicar para loop continuo -->
     <span class="ticker-item">Menos scroll <span class="ticker-dot"></span></span>
     <span class="ticker-item">Más vida <span class="ticker-dot"></span></span>
     <span class="ticker-item">Bienestar digital <span class="ticker-dot"></span></span>
@@ -135,9 +112,6 @@
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- CONCEPTO / STORYTELLING -->
-<!-- ═══════════════════════════════════════════════════════ -->
 <section id="concepto">
   <div class="container">
     <div class="concepto-inner">
@@ -179,12 +153,8 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- POR QUÉ ENTRELÍNEAS -->
-<!-- ═══════════════════════════════════════════════════════ -->
 <section id="nombre">
   <div class="container">
-    <!-- Contenido centrado explicando el nombre -->
     <div class="concepto-inner">
       <p class="section-label reveal">El nombre</p>
       <h2 class="concepto-headline reveal reveal-delay-1">
@@ -201,35 +171,26 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- PRODUCTO: VOLUMEN 1 -->
-<!-- ═══════════════════════════════════════════════════════ -->
 <section id="producto">
   <div class="container">
-    <!-- Cabecera del producto -->
     <div class="product-header">
       <div class="reveal">
         <p class="section-label">Producto destacado</p>
         <h2 class="product-headline">
           <em>Stopamina</em><br>Volumen 1
         </h2>
-        <!-- Descripción del producto -->
         <p class="product-desc">
           Stop + Dopamina. Para. Recupera tu atención. 80 páginas de actividades prácticas para reconectar con el presente, sin pantallas ni distracciones. Diseñado para momentos de 5-15 minutos: en el metro, esperando una cita, o antes de dormir.
         </p>
       </div>
     </div>
 
-    <!-- Layout del producto con imagen -->
     <div class="product-layout">
-      <!-- Columna izquierda: beneficios -->
        <div class="product-mockups reveal">
-        <!-- Imagen del ejercicio -->
         <img src="img/1ejercicio.jpg" alt="Ejercicio del cuaderno" class="product-image" id="product-image">
       </div>
       
       <div class="product-benefits">
-        <!-- Etiqueta de qué encontrarás dentro -->
         <p class="section-label reveal benefits-label">Qué encontrarás dentro</p>
         <ul class="benefits-list">
           <li class="benefit-item reveal reveal-delay-1">
@@ -283,11 +244,9 @@
           </li>
         </ul>
 
-        <!-- Precio del producto -->
         <p class="product-price">
           18,90 € <span>IVA incluido · Envío gratis +35€</span>
         </p>
-        <!-- Botones de acción -->
         <div class="button-group">
           <a href="#" class="btn-primary">Comprar ahora</a>
           <a href="#usarlo" class="btn-outline">Cómo funciona</a>
@@ -297,19 +256,14 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- CÓMO USARLO -->
-<!-- ═══════════════════════════════════════════════════════ -->
 <section id="usarlo">
   <div class="container">
-    <!-- Cabecera de la sección -->
     <div class="usarlo-header">
       <p class="section-label reveal" style="justify-content:center;">Cómo usarlo</p>
       <h2 class="usarlo-headline reveal reveal-delay-1">Los mejores momentos<br>son los que nadie planifica</h2>
       <p class="usarlo-sub reveal reveal-delay-2">El cuaderno está diseñado para cualquier momento libre. Sin estructura. Sin horas mínimas. Sin perfeccionismo.</p>
     </div>
 
-    <!-- Grid de momentos -->
     <div class="moments-grid reveal">
       <div class="moment-card">
         <div class="moment-number">01</div>
@@ -360,12 +314,8 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- SOBRE NOSOTROS -->
-<!-- ═══════════════════════════════════════════════════════ -->
 <section id="nosotros">
   <div class="container">
-    <!-- Contenido de nosotros -->
     <div class="nosotros-inner">
       <div>
         <p class="nosotros-label reveal">Sobre nosotros</p>
@@ -380,7 +330,6 @@
           Cada cuaderno es revisado desde el primer trazo hasta el gramaje del papel. Porque creemos que los objetos que usas a diario deben ser tan bonitos como útiles.
         </p>
       </div>
-      <!-- Cita visual -->
       <div class="nosotros-visual reveal reveal-delay-2">
         <blockquote class="nosotros-quote">
           El tiempo muerto no existe. Existe el tiempo que todavía no hemos decidido vivir.
@@ -391,18 +340,13 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- VALORES -->
-<!-- ═══════════════════════════════════════════════════════ -->
 <section id="valores">
   <div class="container">
-    <!-- Cabecera de valores -->
     <div class="valores-header">
       <p class="section-label reveal">Misión, visión y valores</p>
       <h2 class="valores-headline reveal reveal-delay-1">Lo que nos mueve</h2>
     </div>
 
-    <!-- Grid de valores -->
     <div class="valores-grid">
       <div class="valor-item reveal">
         <div class="valor-icon">
@@ -454,7 +398,6 @@
       </div>
     </div>
 
-    <!-- Misión / Visión -->
     <div class="mision-grid">
       <div class="mision-card reveal">
         <h3>Nuestra misión</h3>
@@ -468,21 +411,15 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- CTA BAND -->
-<!-- ═══════════════════════════════════════════════════════ -->
 <div class="cta-band">
   <div class="container-narrow" style="position:relative;z-index:1;">
-    <!-- Etiqueta de sección -->
     <p class="section-label reveal" style="color:rgba(255,255,255,0.6);justify-content:center;margin-bottom:1.5rem;">
       <span style="background:rgba(255,255,255,0.15);"></span>
       Empieza hoy
     </p>
-    <!-- Título de llamada a la acción -->
     <h2 class="reveal reveal-delay-1">
       La próxima vez que abras<br>el móvil por aburrimiento,<br>abre esto en su lugar
     </h2>
-    <!-- Subtítulo -->
     <p class="reveal reveal-delay-2">Volumen 1 disponible ahora. Envío en 24–48h. Devoluciones gratuitas.</p>
     <a href="#" class="btn-primary reveal reveal-delay-3">
       Comprar Volumen 1 — 18,90 €
@@ -491,19 +428,13 @@
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!-- FOOTER -->
-<!-- ═══════════════════════════════════════════════════════ -->
 <footer>
   <div class="container">
-    <!-- Grid del footer -->
     <div class="footer-grid">
-      <!-- Sección de marca -->
       <div>
-        <p class="footer-brand-name">Entre<span>Líneas</span></p>
+        <img src="img/logoentero.png" alt="Logo entero EntreLíneas" class="nav-logo">
         <p class="footer-tagline">Editorial de cuadernos de actividades para adultos. Diseño, bienestar y desconexión consciente.</p>
         <div class="footer-social">
-          <!-- Instagram -->
           <a href="#" class="social-link" aria-label="Instagram">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <rect x="1" y="1" width="12" height="12" rx="3" stroke="#C8BDB4" stroke-width="1"/>
@@ -511,13 +442,11 @@
               <circle cx="10.5" cy="3.5" r="0.5" fill="#C8BDB4"/>
             </svg>
           </a>
-          <!-- TikTok -->
           <a href="#" class="social-link" aria-label="TikTok">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <path d="M9 1c.3 1.5 1.2 2.4 2.5 2.5v2a5.5 5.5 0 01-2.5-.7V9a4 4 0 11-4-4v2a2 2 0 102 2V1h2z" stroke="#C8BDB4" stroke-width="1" stroke-linejoin="round"/>
             </svg>
           </a>
-          <!-- Pinterest -->
           <a href="#" class="social-link" aria-label="Pinterest">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <circle cx="7" cy="7" r="6" stroke="#C8BDB4" stroke-width="1"/>
@@ -526,7 +455,6 @@
           </a>
         </div>
       </div>
-      <!-- Nav -->
       <div>
         <h4>Navegar</h4>
         <ul class="footer-links">
@@ -537,7 +465,6 @@
           <li><a href="#valores">Valores</a></li>
         </ul>
       </div>
-      <!-- Info -->
       <div>
         <h4>Información</h4>
         <ul class="footer-links">
@@ -548,7 +475,6 @@
           <li><a href="mailto:hola@editorialentrelinea.com">hola@editorialentrelinea.com</a></li>
         </ul>
       </div>
-      <!-- Newsletter -->
       <div>
         <h4>Newsletter</h4>
         <div class="newsletter-form">
@@ -571,18 +497,13 @@
 </footer>
 
 <script>
-  // Asegurar que empiece desde arriba
   window.scrollTo(0, 0);
 
-  // ── NAV SCROLL ────────────────────────────────────────
-  // Añade clase 'scrolled' a la nav cuando se hace scroll
   const nav = document.getElementById('main-nav');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 50);
   });
 
-  // ── SCROLL REVEAL ─────────────────────────────────────
-  // Animaciones de revelado al hacer scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -593,16 +514,14 @@
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  // ── MOBILE MENU ───────────────────────────────────────
-  // Funcionalidad del menú móvil
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileClose = document.getElementById('mobile-menu-close');
 
   hamburger.addEventListener('click', () => {
     mobileMenu.classList.add('open');
-    hamburger.classList.add('hidden'); // Oculta el hamburguesa
-    document.body.style.overflow = 'hidden'; // Evita scroll cuando menú abierto
+    hamburger.classList.add('hidden');
+    document.body.style.overflow = 'hidden'; 
   });
 
   if (mobileClose) {
@@ -614,17 +533,15 @@
   }
   
   mobileMenu.addEventListener('click', (e) => {
-    if (e.target === mobileMenu) closeMobileMenu(); // Cierra al hacer click fuera
+    if (e.target === mobileMenu) closeMobileMenu(); 
   });
 
   function closeMobileMenu() {
     mobileMenu.classList.remove('open');
-    hamburger.classList.remove('hidden'); // Muestra el hamburguesa nuevamente
-    document.body.style.overflow = ''; // Restaura scroll
+    hamburger.classList.remove('hidden'); 
+    document.body.style.overflow = ''; 
   }
 
-  // ── NEWSLETTER ────────────────────────────────────────
-  // Manejo del formulario de newsletter
   const newsletterBtn = document.querySelector('.newsletter-btn');
   const newsletterInput = document.querySelector('.newsletter-input');
   if (newsletterBtn) {
@@ -646,8 +563,6 @@
     });
   }
 
-  // ── COVER UPLOAD ─────────────────────────────────────
-  // Funcionalidad para subir imagen de portada
   const coverUpload = document.getElementById('cover-upload');
   const heroCover = document.getElementById('hero-cover');
 

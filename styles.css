@@ -1,7 +1,6 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    /* Colores principales de la marca */
     --purple: #6B2FA0;
     --purple-light: #9B59D4;
     --purple-dark: #3D1A5C;
@@ -9,7 +8,6 @@
     --orange: #E8621A;
     --orange-light: #F59245;
     --orange-pale: #FFF0E5;
-    /* Colores neutros */
     --cream: #F9F4EC;
     --cream-dark: #E8DCC4;
     --cream-light: #FFFFFF;
@@ -20,7 +18,6 @@
     --taupe: #9b89b8;
     --taupe-light: #c4b5d6;
     --white: #ffffff;
-    /* Colores adicionales */
     --sage: #6B2FA0;
     --sage-dark: #3D1A5C;
     --sage-light: #9B59D4;
@@ -33,10 +30,10 @@
   body {
     font-family: var(--font-cuerpo); 
     background: var(--ink);
-    color: var(--cream); /* Color de texto claro */
+    color: var(--cream);
     font-size: 16px;
-    line-height: 1.7; /* Altura de línea para legibilidad */
-    overflow-x: hidden; /* Evita scroll horizontal */
+    line-height: 1.7; 
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6,
@@ -204,7 +201,7 @@
     display: block;
     transition: var(--transition);
   }
-  /* Menú móvil */
+
   .mobile-menu {
     display: none;
     position: fixed;
@@ -217,7 +214,6 @@
     gap: 2.5rem;
   }
   .mobile-menu.open { display: flex; }
-  /* Enlaces del menú móvil */
   .mobile-menu a {
     font-family: var(--font-serif);
     font-style: italic;
@@ -227,7 +223,6 @@
     text-decoration: none;
     letter-spacing: 0.04em;
   }
-  /* Botón para cerrar menú móvil */
   .mobile-menu-close {
     position: absolute;
     top: 1.5rem;
@@ -240,22 +235,19 @@
     font-family: var(--font-serif);
   }
 
-  /* ── CONTAINERS ─────────────────────────────────────── */
-  /* Contenedor principal para centrar contenido */
+  /* ── contenedores  */
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 3rem;
   }
-  /* Contenedor estrecho para secciones específicas */
   .container-narrow {
     max-width: 760px;
     margin: 0 auto;
     padding: 0 3rem;
   }
 
-  /* ── BUTTONS ────────────────────────────────────────── */
-  /* Botón primario */
+  /* ── botones */
   .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -274,7 +266,6 @@
     transition: background var(--transition), transform var(--transition);
   }
   .btn-primary:hover { background: var(--orange); transform: translateY(-1px); }
-  /* Botón outline */
   .btn-outline {
     display: inline-flex;
     align-items: center;
@@ -293,7 +284,6 @@
     transition: background var(--transition), color var(--transition);
   }
   .btn-outline:hover { background: var(--cream); color: var(--ink); }
-  /* Botón sage (no usado) */
   .btn-sage {
     display: inline-flex;
     align-items: center;
@@ -313,8 +303,7 @@
   }
   .btn-sage:hover { background: var(--sage-dark); transform: translateY(-1px); }
 
-  /* ── SECTION LABELS ─────────────────────────────────── */
-  /* Etiquetas para secciones */
+  /* ── etiquetas  */
   .section-label {
     font-family: var(--font-sans);
     font-size: 0.7rem;
@@ -335,8 +324,7 @@
     background: var(--taupe);
   }
 
-  /* ── HERO ───────────────────────────────────────────── */
-  /* Sección principal del hero */
+  /* ── HERO  */
   #hero {
     min-height: 100vh;
     background: var(--cream);
@@ -346,14 +334,12 @@
     position: relative;
     overflow: hidden;
   }
-  /* Lado izquierdo del hero con texto */
   .hero-left {
     padding: 8rem 3rem 6rem 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  /* Etiqueta del eyebrow */
   .hero-eyebrow {
     font-family: var(--font-sans);
     font-size: 0.7rem;
@@ -363,7 +349,7 @@
     color: var(--orange);
     margin-bottom: 2rem;
   }
-  /* Título principal del hero */
+
   .hero-headline {
     font-family: var(--font-serif);
     font-style: italic;
@@ -378,7 +364,7 @@
     font-style: italic;
     color: var(--orange-light);
   }
-  /* Subtítulo del hero */
+
   .hero-sub {
     font-size: 1rem;
     font-weight: 300;
@@ -387,14 +373,12 @@
     max-width: 380px;
     margin-bottom: 2.5rem;
   }
-  /* Acciones del hero (botones) */
   .hero-actions {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    margin-bottom: 2rem; /* Reducido para menos espacio */
+    margin-bottom: 2rem; 
   }
-  /* Lado derecho del hero */
   .hero-right {
     position: relative;
     min-height: 420px;
@@ -415,7 +399,6 @@
     transform: translateY(-4px);
     box-shadow: 0 40px 80px rgba(0,0,0,0.4);
   }
-  /* Imagen del producto */
   .product-image {
     width: 100%;
     max-width: 500px;
@@ -423,7 +406,6 @@
     box-shadow: 0 20px 60px rgba(0,0,0,0.2);
     object-fit: cover;
   }
-  /* Estadística del hero */
   .hero-stat {
     display: flex;
     align-items: center;
@@ -433,19 +415,18 @@
     font-size: 0.72rem;
     color: var(--taupe);
     letter-spacing: 0.08em;
-    max-width: 500px; /* Limitar ancho */
+    max-width: 500px; 
   }
   .hero-stat strong {
     font-family: var(--font-serif);
-    font-size: 1.5rem; /* Reducido tamaño */
+    font-size: 1.5rem; 
     font-weight: 300;
     color: var(--charcoal);
     display: block;
     letter-spacing: -0.02em;
   }
 
-  /* ── TICKER ─────────────────────────────────────────── */
-  /* Barra de ticker animada */
+  /* ── TICKER  */
   .ticker-wrap {
     background: var(--charcoal);
     padding: 0.85rem 0;
@@ -480,8 +461,7 @@
     to { transform: translateX(-50%); }
   }
 
-  /* ── CONCEPT INTRO ──────────────────────────────────── */
-  /* Sección de introducción al concepto */
+  /* ── CONCEPTO INTRO  */
   #concepto {
     padding: 8rem 0;
     background: var(--white);
@@ -511,7 +491,6 @@
   .concepto-visual {
     position: relative;
   }
-  /* Grid de estadísticas */
   .stats-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -550,35 +529,29 @@
     background: var(--ink-mid);
     padding: 5rem 0;
   }
-  /* Contenedor centrado de nombre */
   #nombre .concepto-inner {
     max-width: 750px;
     margin: 0 auto;
     text-align: center;
   }
-  /* Etiqueta de nombre */
   #nombre .section-label {
     color: var(--orange);
   }
-  /* Título de nombre */
   #nombre .concepto-headline {
     color: var(--cream);
     font-size: 2.5rem;
   }
-  /* Párrafos de nombre */
   #nombre .concepto-body {
     color: #9b89b8;
     font-size: 1.1rem;
     line-height: 1.7;
     text-align: left;
   }
-  /* Énfasis en nombre */
   #nombre em {
     color: var(--cream);
   }
 
-  /* ── PRODUCTO ──────────────────────────────────────── */
-  /* Sección del producto */
+  /* ── PRODUCTO  */
   #producto {
     padding: 8rem 4rem 8rem 4rem;
     background: var(--cream);
@@ -682,7 +655,7 @@
     line-height: 1.5;
   }
 
-  /* ── COMO USARLO ────────────────────────────────────── */
+  /* ── COMO USARLO  */
   #usarlo {
     padding: 8rem 0;
     background: var(--white);
@@ -737,7 +710,7 @@
     font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 0.75rem;
-    color: var(--charcoal); /* Color visible sobre fondo */
+    color: var(--charcoal); 
   }
   .moment-desc {
     font-size: 0.83rem;
@@ -745,7 +718,7 @@
     line-height: 1.6;
   }
 
-  /* ── NOSOTROS ───────────────────────────────────────── */
+  /* ── NOSOTROS  */
   #nosotros {
     padding: 8rem 0;
     background: var(--charcoal);
@@ -830,7 +803,7 @@
     color: var(--sage-light);
   }
 
-  /* ── VALORES ────────────────────────────────────────── */
+  /* ── VALORES  */
   #valores {
     padding: 8rem 0;
     background: var(--cream-light);
@@ -886,7 +859,7 @@
     font-size: 1.6rem;
     font-weight: 400;
     margin-bottom: 1rem;
-    color: var(--charcoal); /* Color visible sobre fondo */
+    color: var(--charcoal);
   }
   .mision-card p {
     font-size: 0.9rem;
@@ -894,7 +867,7 @@
     line-height: 1.8;
   }
 
-  /* ── CTA BAND ───────────────────────────────────────── */
+  /* ── CTA BAND  */
   .cta-band {
     padding: 7rem 0;
     background: var(--sage);
@@ -934,7 +907,7 @@
   }
   .cta-band .btn-primary:hover { background: var(--cream); }
 
-  /* ── FOOTER ─────────────────────────────────────────── */
+  /* ── FOOTER  */
   footer {
     background: var(--charcoal);
     color: var(--cream-light);
